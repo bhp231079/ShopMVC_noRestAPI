@@ -1,0 +1,74 @@
+.container-fluid{
+   
+}
+.navbar{
+  border: solid 1px rgb(244, 238, 238);
+  background-color:white;
+  
+}
+a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(25, 230, 230);
+    
+}
+#btn{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(25, 230, 230);
+}
+.nav{
+    background-color: white;
+     
+}
+.drodown{
+    position: relative;
+   
+    
+}
+.drodown-menu{
+    position: absolute;
+   
+}
+.dropdown:hover .dropdown-menu {
+    display: block; 
+  }
+.img-slide{
+
+    width: 1500px;
+}
+.slider-frame{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.label-content{
+    text-align: center;
+    border: solid 1px rgb(242, 239, 239);
+    margin-top: 2px;
+    background-color: azure;
+}
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}  
+.local-brand{
+  width: 80px;
+  padding: 10px;
+  margin-right: 10px;
+
+} 
+.container{
+  text-align: center;
+  margin-top: 10px;
+  border: solid 1px rgb(242, 239, 239);
+}
+.link-brand{
+    text-align: center;
+    font-size: larger;
+    border-bottom: solid 1px rgb(242, 239, 239);
+   
+  }
+ .form-control{
+ 	border-radius: 50px;
+ }
+/*  .btn{ */
+/*  border-radius: 50px; */
+/*  } */

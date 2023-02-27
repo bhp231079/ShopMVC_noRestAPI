@@ -1,0 +1,27 @@
+     <div class="row" th:fragment="header">
+
+        <ul class="nav col-md-9">
+        	
+          <li class="nav-item"><a class="nav-link" href="#">Liên hệ: <i class="fas fa-headset"></i> 0928644923</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Email: <i class="fas fa-at"></i> bhphhuyen@gmail.com</a>
+          </li>
+        </ul>
+       
+       
+        <ul class="nav col-md-3" >
+          <li class="nav-item dropdown"><a class="nav-link dropdown" data-toggle="dropdown" th:href="@{/client/login}"  th:text="${user}? ${user.name} :'Tài khoản' "><i class="fas fa-user"></i></a>
+          	<div class="dropdown-menu" th:if="${user} !=null">
+          	
+               	    <button type="button" class="dropdown-item"><a th:href="@{/user/detail(id=${user.id})}">Thông tin cá nhân</a></button>
+               	   
+                  <button id="btn" type="button" class="dropdown-item"><a th:href="@{/logout}">Đăng xuất</button>
+               	 
+               	   	
+          	</div>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown" data-toggle="dropdown" th:href="@{/client/view-to-cart}"><i class="fas fa-cart-arrow-down"></i>Giỏ
+              hàng</a></li>
+        </ul>
+   
+      </div>
+	</div>

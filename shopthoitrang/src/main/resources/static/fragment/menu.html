@@ -1,0 +1,76 @@
+<div class="row" th:fragment="menu">
+        <nav class="navbar navbar-expand-sm navbar-white col-md-12 ">
+          <!-- Brand/logo -->
+          <div class="col-md-1 ">
+            <a class="navbar-brand" th:href="@{/}"> <img th:src="@{/img/HP.png}" alt="logo"
+                style="width: 50px;">
+            </a>
+          </div>
+          <div class="col-md-8">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown"><a class="nav-link dropdown" href="" data-toggle="dropdown">Mẫu
+                  mới</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Mã mới trong tháng</a>
+                  <a class="dropdown-item" href="#">Bộ sưu tập hot 2022</a>
+                  <a class="dropdown-item" href="#">Hot sale </a>
+                  <a class="dropdown-item" href="#">Thời trang nam</a>
+                  <a class="dropdown-item" href="#">Brand hot</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link  dropdown" href="" data-toggle="dropdown">Nam
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" th:href="@{/client/product/So mi nam}">Áo sơ mi</a> <a class="dropdown-item" th:href="@{/client/product/Ao khoac nam}">Áo khoác</a> <a class="dropdown-item" href="#">Áo thun</a> <a class="dropdown-item"
+                    href="#">Quần đùi</a> <a class="dropdown-item" href="#">Quần dài</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown" href="" data-toggle="dropdown">Nữ</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Áo khoác chống nắng</a> <a class="dropdown-item" th:href="@{/client/product/Ao thun nu}">Áo thun
+                    nữ</a> <a class="dropdown-item" href="#">Áo khoác nam</a>
+                </div>	
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown" href="" data-toggle="dropdown">Quần</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Quần đùi nữ</a> <a class="dropdown-item" href="#">Quần dài  nữ</a>
+                  <a class="dropdown-item" href="#">Quần dài nữ</a> <a class="dropdown-item" href="#">Quần dài nữ	</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown" href="" data-toggle="dropdown">Váy
+                  đầm</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Áo váy ngủ</a> <a class="dropdown-item" href="#">Váy đầm đẹp</a> <a
+                    class="dropdown-item" href="#">Váy chống nắng</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown" href="" data-toggle="dropdown">Big
+                  size</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Áo thun bigsize</a> <a class="dropdown-item" href="#">Áo khoác
+                    bigsize</a> <a class="dropdown-item" href="#">Quần lót bigsize</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown" href="" data-toggle="dropdown">Sale</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Ưu đãi trải nghiệm</a> <a class="dropdown-item" href="#">Sale off
+                    50%</a> <a class="dropdown-item" href="#">Sale off 25%</a> <a class="dropdown-item" href="#">Sale 1
+                    tặng 1</a>
+                </div>
+              </li>
+              <li class="nav-item "><a class="nav-link " href="">Tin thời
+                  trang</a></li>
+            </ul>
+          </div>
+		 <form th:action="@{/client/search}">
+          <div class="input-group mb-3">
+         
+            <input type="text" class="form-control" name="name" placeholder="Search...">
+            <div class="input-group-append">
+              <button class="btn btn-info" type="submit"><i class="fas fa-search"></i></button>
+             
+            </div>
+ </form>
+          </div>
+        </nav>
+      </div>

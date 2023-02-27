@@ -1,0 +1,30 @@
+.container-fluid{
+    background-color: aliceblue;
+}   
+.menu{
+  background-color: aqua;
+}
+i{
+    padding-right: 10px;
+}
+.search{
+    padding: 10px;
+}
+h5{
+    padding-top: 10px;
+}
+.select{
+    float: right;
+    padding-top: 10px;
+}
+.list{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 5px;
+    
+}.list ul li {
+    border: 1px solid rgb(251, 251, 251);
+}
+#btn-add{
+   width: 40px; 
+}

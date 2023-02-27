@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!--header-->
+    <header class="header">
+
+
+      <!--header-->
+     
+ 	<div th:replace="../static/fragment/header :: header"></div>
+      <!--Menu-->
+      <div th:replace="../static/fragment/menu :: menu"></div>
+    </header>
+    <article>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="slider-frame">
+            <div class="slider-imgs">
+              <div class="img-container">
+                <img id="img" class="img-slide" onclick="changeImg()" src="img/banner_1.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-12">
+          <div class="label-content">
+            <label>PHD SHOP</label> <br />
+            <label>XÂY DỰNG CHẤT LƯỢNG TẠO DỰNG NIỀM TIN</label>
+          </div>
+        </div>
+      </div>
+    
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="link-brand">
+
+
+            
+              <label>TOP BRAND</label>
+            </div>
+          </div>
+          </div>
+          <div class="row">
+        <div class="col-md-12">
+        
+        <ul class="nav ">
+          <li class="nav-item"><a class="nav-link" href="#"><img class="local-brand" src="img/juno.jpg"></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img class="local-brand" src="img/canifa.png"></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img class="local-brand" src="img/gumac.png"></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img class="local-brand" src="img/logovt.png"></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img class="local-brand" src="img/novelty.png"></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img class="local-brand" src="img/theblues.png"></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img class="local-brand" src="img/owen.jpg"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    </article>
+   
+  </div>
+
+</body>
+<script>
+  var index = 0;
+  changeImg = function changeImage() {
+    var imgs = ["img/banner_1.jpg", "img/banner_2.jpg", "img/banner_3.jpg"]
+    document.getElementById('img').src = imgs[index]
+    index++
+    if (index == 3) {
+      index = 0;
+    }
+
+  }
+  setInterval(changeImg, 2000)
+
+
+</script>
+
+</html>
